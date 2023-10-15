@@ -14,7 +14,8 @@ class CustomLabelChoiceField(TreeNodeChoiceFieldMixin, forms.ModelChoiceField):
 
 class CategoryAdminForm(MPTTAdminForm):
 
-    parent = CustomLabelChoiceField(queryset=Category.objects.all(), label='Родительская категория')
+    parent = CustomLabelChoiceField(queryset=Category.objects.all(), 
+    label='Родительская категория', required=False)
 
     class Meta:
         model = Category
