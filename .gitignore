@@ -1,0 +1,16 @@
+db.sqlite3
+
+venv
+
+.git
+.vscode
+
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
+
+__pycache__/
+*/__pycache__/
+
+static
+!**/menu/static

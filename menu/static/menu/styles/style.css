@@ -1,0 +1,75 @@
+body {
+    margin: 0%;
+    background: #303030;
+    min-height: 100vh;
+}
+.container-menus {
+    display: flex;
+    column-gap: 40px;
+    padding-top: 30px;
+    /* border: 1px solid red; */
+}
+
+details[class^="menu-"] {
+    max-width: 300px;
+    font-size: 20px !important;
+    /* отключить выделение текста при нажатии */
+    user-select: none;
+    /* border: 1px solid red; */
+}
+/* details[class^="menu-"] details {
+    border: 1px solid red;
+} */
+details[class^="menu-"] ul {
+    /* отключить кругляшки перед пунктами меню */
+    list-style: none;
+    margin: 0;
+}
+details[class^="menu-"] a {
+    color: #dddddd;
+    /* отключить нижнее подчёркивание при наведении на ссылку */
+    text-decoration: none;
+}
+details[class^="menu-"] a:hover {
+    color: #88c9fb;
+}
+
+details[class^="menu-"] > summary {
+    color: #dddddd;
+    transition: all 0.5s ease;
+}
+details[class^="menu-"][open] > summary {
+    color: #fff;
+}
+details[class^="menu-"] > summary::marker {
+    color: #dddddd;
+    transition: all 0.5s ease;
+}
+details[class^="menu-"][open] > summary::marker {
+    color: #88c9fb;
+}
+
+details[class^="menu-"] ul details > summary {
+    color: #dddddd;
+    transition: all 0.5s ease;
+}
+details[class^="menu-"] ul details[open] > summary {
+    color: #fff;
+}
+details[class^="menu-"] ul details > summary::marker {
+    color: #dddddd;
+    transition: all 0.5s ease;
+}
+details[class^="menu-"] ul details[open] > summary::marker {
+    color: #88c9fb;
+}
+
+details[class^="menu-"] .l {
+    list-style-type: '📄';
+    margin-left: 22px;
+    /* border: 1px solid lime; */
+}
+details[class^="menu-"] .nl {
+    list-style-type: '📁';
+    /* border: 1px solid yellow; */
+}
