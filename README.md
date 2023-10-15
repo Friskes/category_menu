@@ -5,6 +5,9 @@
 #### Загрузите репозиторий с помощью команды:
 `git clone https://github.com/Friskes/category_menu.git`
 
+#### Создайте виртуальное окружение:
+`python -m venv venv`
+
 #### Установите зависимости необходимые для работы приложения:
 `pip install -r requirements.txt`
 
